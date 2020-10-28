@@ -1,27 +1,10 @@
-<div class="bg-dark m-2" style="height: 80px "> 
-    <p class="text-white h1 pt-3">Delivery online</p>
-
-    <nav class="container nav justify-content-end ">
-     <div class=" btn-group btn-group-toggle btn-lg" data-toggle="buttons">    
-    <a class="btn btn-success active" (click)="hd()">
-      <input type="radio" name="options" id="option1" autocomplete="off" checked > Active
-    </a>
-    <a class="btn btn-success" (click)="hdd()">
-      <input type="radio" name="options" id="option2" autocomplete="off" checked> Radio
-    </a>
-    <a class="btn btn-success" (click)="hddd()">
-      <input type="radio" name="options" id="option3" autocomplete="off" checked> Radio
-    </a>
-</div>
-</nav>
-</div>
-
-<div class="bg-dark m-2" style="height: 80px">
-    <nav class="container nav nav-pills justify-content-end pr-0 pt-3">
-      <div>Delivery online</div>
-      <a class="nav-item nav-link active" href="#">1- Elegir tu delivery</a>
-      <a class="nav-item nav-link active" href="#">2- Hacer tu pedido</a>
-      <a class="nav-item nav-link active" href="#">3- Completa tus datos</a>
+<div style="height: 80px">
+  <div class="row bg-dark py-4 px-4 pr-4">
+    <div class="col-md-3"><p class="text-white h2">Delivery online</p></div>
+    <nav class="col-md offset-md-4 btn-group ">
+      <a href="#" type="button" class="btn btn-success" (click)="hola()" >1- Elija su delivery</a>
+      <a href="#" type="button" class="btn btn-success" (click)="hola2()" >2- Hacer tu pedido</a>
+      <a href="#" type="button" class="btn btn-success" (click)="hola3()" >3- Completa tus datos</a>
     </nav>
   </div>
-  
+</div>

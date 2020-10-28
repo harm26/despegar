@@ -6,22 +6,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent implements OnInit {
-
-  hd(){
+  
+  hola(){
   console.log("hola")
   
   };
 
-  hdd(){
+  hola2(){
     console.log("hola2")
     
     };
 
-    hddd(){
+    hola3(){
       console.log("hola3")
       
       };
+ 
 
+  
   constructor() { }
 
   ngOnInit(): void {
