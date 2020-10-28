@@ -1,1 +1,41 @@
-<p>deliveries works!</p>
+<div class="mb-4">
+    <div class="ml-5">
+  <h1 class="ml-5">Filtros:</h1>
+</div>
+  <div class="container" style="background-color:#e2e5e2">
+    <div class="input-group">
+      <label>
+        <span> Nombre:</span> <br />
+        <input type="text" />
+      </label>
+
+      <div class="ml-5">
+        <label>
+          <span> Descripcion: </span> <br />
+          <input type="text" />
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+    <h4>Deliveries:</h4>
+<div class="container card-group">
+        
+  <div *ngFor="let deliverie of deliveries">
+    <div class="card m-2 border-dark" style="width: 250px; height: 250px">
+      <div class="card-header bg-primary text-white">
+        <h4>{{ deliverie.name }}</h4>
+      </div>
+      <div class="card-body" style="background-color:#e2e5e2">
+        <p class="card-text">
+          {{ deliverie.description }}
+        </p>
+        <a href="#" class="text-success">Realizar pedido </a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

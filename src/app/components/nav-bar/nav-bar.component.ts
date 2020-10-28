@@ -7,6 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
 
+  hd(){
+  console.log("hola")
+  
+  };
+
+  hdd(){
+    console.log("hola2")
+    
+    };
+
+    hddd(){
+      console.log("hola3")
+      
+      };
+
   constructor() { }
 
   ngOnInit(): void {

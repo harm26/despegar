@@ -1,6 +1,6 @@
 import { Deliverie } from './../interfaces/deliverie';
 
-export const RESTAURANTES: Deliverie[] = [
+export const DELIVERIES: Deliverie[] = [
   {
     name: 'Puerto Marisko',
     description:
