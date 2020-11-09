@@ -7,21 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
   
-  hola(){
-  console.log("hola")
   
-  };
-
-  hola2(){
-    console.log("hola2")
-    
-    };
-
-    hola3(){
-      console.log("hola3")
-      
-      };
- 
 
   
   constructor() { }
