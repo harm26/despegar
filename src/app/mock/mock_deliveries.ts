@@ -12,12 +12,11 @@ export const DELIVERIES: Deliverie[] = [
       'Hamburguesas, Perros calientes, Submarinos, Pepitos, Papas fritas',
   },
   {
-    name: 'La Parrillada de Humberto',
+    name: 'Parrilla de Humberto',
     description:
-      'Carne a la parrilla, Pollo a la parrilla, Chicharron, Ensaladas',
+      'Carne a la parrilla, Pollo a la parrilla, Ensaladas',
   },
-  { name: 'Donde Luis',
-   description: 'Comida casera, sopas, ensaladas' },
+  { name: 'Donde Luis', description: 'Comida casera, sopas, ensaladas' },
   {
     name: 'Japan sushi bar',
     description: 'Comida tradicional japonesa, rolls',
@@ -28,11 +27,9 @@ export const DELIVERIES: Deliverie[] = [
   },
   {
     name: 'Dr. Dogs',
-    description:
-      'perros calientes con salchicha polaca, perros calientes con salchicha alemana, perros calientes con ternera',
+    description: 'perros calientes con salchicha polaca, con salchicha alemana',
   },
-  { name: 'La mia Nonna',
-   description: 'Pizzas, pastas, Pastichos' },
+  { name: 'La mia Nonna', description: 'Pizzas, pastas, Pastichos' },
   {
     name: 'Budare',
     description: 'Cachapas, Arepas, Empanadas, pastelitos, Jugos naturales',

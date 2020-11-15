@@ -1,6 +1,6 @@
 #input-td{
 
-    width: 40px;
+    width: 35px;
 }
 #color-tr{
     color: white;
@@ -12,6 +12,16 @@
 
 #container-pedido{
     margin-top: 60px;
+
+}
+
+#precio-unitario{
+
+    width: 130px;
+}
+
+#total{
     
+    width:70px
 }
 

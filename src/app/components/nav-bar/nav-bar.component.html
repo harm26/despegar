@@ -1,13 +1,26 @@
 
-<div class="container-fluid bg-dark my-5" id="cont-nav">
-  
-    <div class="row py-4 px-4 pr-4">
-      <div class="col-md-3"><p class="text-white h1" id="title-nav">Delivery online</p></div>
-      <nav class="col-md-5 offset-md-4 btn-group" style="height: 40px;" >
-        <a href="#" type="button" class="btn btn-success">1- Elija su delivery</a>
-        <a href="#" type="button" class="btn btn-success">2- Hacer tu pedido</a>
-        <a href="#" type="button" class="btn btn-success">3- Completa tus datos</a>
+<div class="container nav-bar fixed-top" id="cont-nav">  
+    <div class="row py-2 ">
+      <div class="col-md-4"><p class="text-white h1" id="title-nav">Delivery online</p></div>
+      <div class="col-md-8 " id="btn-nav" >
+      <nav class="btn-group" data-toggle="button">
+        
+        <a routerLink="/deliveries" type="button" class="btn"  
+         id="grey">
+          1- Elija su delivery
+        </a>
+
+        <a routerLink="/menu" type="button" class="btn" 
+         id="grey">
+          2- Hacer tu pedido
+        </a>
+        
+        <a routerLink="/datos" type="button" class="btn" 
+         id="grey">
+          3- Completa tus datos
+        </a>
       </nav>
+    </div>
     </div>
 
 </div>
