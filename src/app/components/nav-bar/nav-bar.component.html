@@ -1,26 +1,24 @@
-
-<div class="container nav-bar fixed-top" id="cont-nav">  
-    <div class="row py-2 ">
-      <div class="col-md-4"><p class="text-white h1" id="title-nav">Delivery online</p></div>
-      <div class="col-md-8 " id="btn-nav" >
+<div class="container nav-bar fixed-top" id="cont-nav">
+  <div class="row py-2">
+    <div class="col-sm-4 h1">
+      <p class="text-white h1" id="title-nav">Delivery online</p>
+    </div>
+    <div class="col-sm-8" id="btn-nav">
       <nav class="btn-group" data-toggle="button">
-        
-        <a routerLink="/deliveries" type="button" class="btn"  
-         id="grey">
+        <a routerLink="/deliveries" type="button" [ngClass]="miClase ? 'classTrue' : 'classFalse'"
+          (click)="cambioClase()" class="p-2">
           1- Elija su delivery
         </a>
-
-        <a routerLink="/menu" type="button" class="btn" 
-         id="grey">
+        <a routerLink="/menu" type="button" [ngClass]="miClase2 ? 'classTrue' : 'classFalse'" (click)="cambioClase2()"
+          class="p-2">
           2- Hacer tu pedido
         </a>
-        
-        <a routerLink="/datos" type="button" class="btn" 
-         id="grey">
+
+        <a routerLink="/datos" type="button" [ngClass]="miClase3 ? 'classTrue' : 'classFalse'" (click)="cambioClase3()"
+          class="p-2">
           3- Completa tus datos
         </a>
       </nav>
     </div>
-    </div>
-
+  </div>
 </div>

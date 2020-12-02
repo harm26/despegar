@@ -1,8 +1,6 @@
 #cont-nav{
     background-color: #3a3e56;
     height: 60px;
-
-    
 }
 
 #title-nav{
@@ -10,25 +8,21 @@
 }
 
 #btn-nav{
-
     height: 40px;
-    max-height: 70px;
-    text-align: right;
-    
+    text-align: right;    
 }
 
 
-#grey{
+ .classFalse{
     background-color: #32d3c6;
     color:white;
 }
 
-
-#grey:focus{
+.classTrue{
     background-color: lightgray;
     color: black;
 }
-  
+   
 
 
 

@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule } from '@angular/core'
+import { FormsModule } from '@angular/forms'
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +12,8 @@ import { MenuComponent } from './components/menu/menu.component';
 import { CompletarPedidoComponent } from './components/completar-pedido/completar-pedido.component';
 import { VariableComponent } from './components/variable/variable.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { SearchPipe } from './pipes/search.pipe';
+import { SearchDescriptionPipe } from './pipes/search-description.pipe';
 
 @NgModule({
   declarations: [
@@ -20,11 +24,14 @@ import { FooterComponent } from './components/footer/footer.component';
     MenuComponent,
     CompletarPedidoComponent,
     VariableComponent,
-    FooterComponent
+    FooterComponent,
+    SearchPipe,
+    SearchDescriptionPipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

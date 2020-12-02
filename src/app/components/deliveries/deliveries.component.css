@@ -2,8 +2,10 @@
     background-color:#e2e5e2;
     height: 80px;
     justify-content: center;
-    max-height: 160px;
+    max-height: 300px;
 }
+
+
 
 #card-deliv{
     width: 250px;
@@ -21,6 +23,11 @@ a{
 }
 
 #inp-bsc{
+
+    width: 220px;
+}
+
+#inp2-bsc{
 
     width: 220px;
 }

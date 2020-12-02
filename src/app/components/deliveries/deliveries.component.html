@@ -1,17 +1,29 @@
 <div class="container" id="margin-top">
-    
-  <h2 class="ml-4 mt-3">Filtros:</h2>
+
+  <div class="ml-4 mt-3">   
+    <h2>Filtros:</h2>
+</div>
 
   <div class="container" id="input-group" >
 
   <div class="form-row">
-    <div class="form-group col-md-3 ml-3">
+    <div class="form-group col-sm-3 ml-3">
       <label>Nombre:</label>
-      <input type="text" class="form-control" placeholder=" Nombre" id="inp-bsc" >
+      <input
+       type="text"
+       placeholder=" Nombre"
+       id="inp2-bsc"
+       name = "filterDeli"
+       [(ngModel)] = "filterDeli">
     </div>
-    <div class="form-group col-md-3 ml-5 ">
+    <div class="form-group col-sm-3 ml-5 ">
       <label>Descripcion:</label>
-      <input type="text" class="form-control" placeholder=" Descripcion" id="inp-bsc" >
+      <input
+       type="text"
+         placeholder=" Descripcion"
+          id="inp-bsc"
+          name="filterDescrip"
+          [(ngModel)]="filterDescrip">
     </div>
   </div>
 </div>
@@ -22,7 +34,9 @@
 <div class="container card-group row ">
   
         
-  <div *ngFor="let deliverie of deliveries" class="col-sm-3" >
+  <div *ngFor="let deliverie of deliveries 
+  | search : filterDeli |searchDescription:filterDescrip ;
+   let i = index " class="col-sm-3" >
     <div class="card m-2 border-dark" id="card-deliv">
       <div class="card-header bg-primary text-white">
         <h4>{{ deliverie.name }}</h4>

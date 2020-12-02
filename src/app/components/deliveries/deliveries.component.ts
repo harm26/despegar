@@ -1,6 +1,6 @@
 import { DeliveriesService } from './../../services/deliveries.service';
 
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, } from '@angular/core';
 import { Deliverie } from 'src/app/interfaces/deliverie';
 
 @Component({
@@ -9,6 +9,10 @@ import { Deliverie } from 'src/app/interfaces/deliverie';
   styleUrls: ['./deliveries.component.css']
 })
 export class DeliveriesComponent implements OnInit { 
+
+  filterDeli = "";
+  filterDescrip = "";
+
 
   constructor(private deliveriesService: DeliveriesService) { }
 
@@ -19,7 +23,5 @@ export class DeliveriesComponent implements OnInit {
 
   getDeliveries(): void{
     this.deliveries = this.deliveriesService.getDeliveries();
-    console.log(this.deliveries)
   };
-
 }
